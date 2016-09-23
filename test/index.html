@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Twitch.tv Stream Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="main">
+	<div class="content">
+		<h1 class="title">Twitch.tv Stream Search</h1>
+        <div class="search_box">
+        	<form action="javascript:;" name="search_form" id="search_form">
+            	<input type="text" name="search" id="search" autocomplete="off" required value="" placeholder="e.g. PES" class="input_text">
+                <input type="button" name="submit" id="submit" value="Search" class="button">
+            </form>
+        </div>
+        <div id="loading">Loading ...</div>
+        <div id="result"></div>
+        <div id="video">
+        	<div class="content_video">
+            	<div class="div_cell">
+                    <div class="frame_video videoWrapper">
+                        <iframe id="frame_src" src="" height="720" width="1280" frameborder="0" scrolling="no" allowfullscreen="true"></iframe>
+                    </div><!--
+                    --><div class="info_video"></div>
+                </div>
+           	</div>
+            <div class="close animationcss">X</div>
+        </div>
+  	</div>
+</div>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
